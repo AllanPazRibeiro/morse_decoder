@@ -32,7 +32,7 @@
     architecture Behavioral of morse_decoder is
  
     signal two_bit: std_logic_vector(1 downto 0);
-    type init_state is (trace, dot, np, nc);
+    type init_state is (one, zero);
     signal current_state, next_state: init_state;
     
     begin
@@ -52,45 +52,17 @@
     define_which_init_type_is:process(current_state,two_bit)
     begin
      case(current_state) is
-        when dot =>
-            if(two_bit='11') then
-                next_state <= dot;
+        when one =>
+            if(two_bit='0') then
+                next_state <= one;
             else
-                next_state <= trace;
-            else
-                next_state <= nc;
-            else
-                next_state <= np;
+                next_state <= zero
             end if;
-     when trace =>
-            if(two_bit='00') then
-                 next_state <= trace;
+     when zero =>
+            if(two_bit='1') then
+                 next_state <= one;
             else
-                 next_state <= dot;
-            else
-                 next_state <= nc;
-            else
-                 next_state <= np;
-            end if;
-     when np =>
-            if(two_bit='01') then
-                 next_state <= np;
-            else
-                 next_state <= trace;
-            else
-                 next_state <= nc;
-            else
-                 next_state <= dot;
-            end if;
-     when nc =>
-            if(two_bit='01') then
-                 next_state <= nc;
-            else
-                 next_state <= trace;
-            else
-                 next_state <= np;
-            else
-                 next_state <= dot;
+                 next_state <= zero;
             end if;
      end case;
     end process;
