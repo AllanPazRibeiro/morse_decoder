@@ -1,0 +1,48 @@
+
+*** Running vivado
+    with args -log morse_decoder.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source morse_decoder.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source morse_decoder.tcl -notrace
+Command: synth_design -top morse_decoder -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9296 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 357.336 ; gain = 99.113
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-1014] nc is not a signal [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:50]
+ERROR: [Synth 8-2774] type grupos does not match with the integer literal [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:50]
+ERROR: [Synth 8-944] 0 definitions of operator "<=" match here [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:51]
+ERROR: [Synth 8-944] 0 definitions of operator "<=" match here [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:52]
+ERROR: [Synth 8-944] 0 definitions of operator "<=" match here [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:53]
+ERROR: [Synth 8-944] 0 definitions of operator "<=" match here [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:54]
+ERROR: [Synth 8-944] 0 definitions of operator "<=" match here [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:55]
+ERROR: [Synth 8-2715] syntax error near <= [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:61]
+ERROR: [Synth 8-2715] syntax error near <= [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:64]
+ERROR: [Synth 8-944] 0 definitions of operator "=" match here [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:67]
+ERROR: [Synth 8-944] 0 definitions of operator "=" match here [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:65]
+ERROR: [Synth 8-2715] syntax error near <= [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:71]
+ERROR: [Synth 8-944] 0 definitions of operator "=" match here [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:74]
+ERROR: [Synth 8-944] 0 definitions of operator "=" match here [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:76]
+ERROR: [Synth 8-944] 0 definitions of operator "=" match here [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:78]
+ERROR: [Synth 8-944] 0 definitions of operator "=" match here [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:72]
+ERROR: [Synth 8-2715] syntax error near <= [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:82]
+ERROR: [Synth 8-944] 0 definitions of operator "=" match here [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:85]
+ERROR: [Synth 8-944] 0 definitions of operator "=" match here [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:87]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 410.313 ; gain = 152.090
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+2 Infos, 0 Warnings, 0 Critical Warnings and 20 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Mon Oct  1 17:31:07 2018...
