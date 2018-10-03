@@ -22,15 +22,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
 entity Morse_tb is
 --  Port ( );
 end Morse_tb;
@@ -48,7 +39,7 @@ architecture Behavioral of Morse_tb is
     signal entrada : STD_LOGIC;
     signal saida   : STD_LOGIC_VECTOR (7 downto 0);
 
-    constant clk_period : time := 20 ns;
+    constant clk_period : time := 40 ns;
 
 begin
 
@@ -78,123 +69,124 @@ begin
  
         reset <= '0';
         
-        -- B
-        entrada <= '1';
-        wait for clk_period*2;
-        entrada <= '0';
-        wait for clk_period*6;
+                -- B
+                entrada <= '1';
+                wait for clk_period*2;
+                entrada <= '0';
+                wait for clk_period*6;
         
-        -- NC
-        entrada <= '1';
-        wait for clk_period;
-        entrada <= '0';
-        wait for clk_period;
-        
-        -- A
-        entrada <= '1';
-        wait for clk_period*2;
-        entrada <= '0';
-        wait for clk_period*2;
-
-        -- NC
-        entrada <= '1';
-        wait for clk_period;
-        entrada <= '0';
-        wait for clk_period;
-        
-        -- T
-        entrada <= '0';
-        wait for clk_period*2;
-
-        -- NC
-        entrada <= '1';
-        wait for clk_period;
-        entrada <= '0';
-        wait for clk_period;
-        
-        -- I
-        entrada <= '1';
-        wait for clk_period*4;
-
-        -- NC
-        entrada <= '1';
-        wait for clk_period;
-        entrada <= '0';
-        wait for clk_period;
-        
-        -- M
-        entrada <= '0';
-        wait for clk_period*4;
-
-        -- NC
-        entrada <= '1';
-        wait for clk_period;
-        entrada <= '0';
-        wait for clk_period;
-        
-        -- A
-        entrada <= '1';
-        wait for clk_period*2;
-        entrada <= '0';
-        wait for clk_period*2;
-
-        -- NC
-        entrada <= '1';
-        wait for clk_period;
-        entrada <= '0';
-        wait for clk_period;
-
-        -- H
-        entrada <= '0';
-        wait for clk_period*8;
-
-        -- NC
-        entrada <= '1';
-        wait for clk_period;
-        entrada <= '0';
-        wait for clk_period;
-
-        -- NP
-        entrada <= '0';
-        wait for clk_period;
-        entrada <= '1';
-        wait for clk_period;
-
-        -- L
-        entrada <= '1';
-        wait for clk_period*4;
-
-        -- O
-        entrada <= '1';
-        wait for clk_period*2;
-        entrada <= '0';
-        wait for clk_period*2;
-        entrada <= '1';
-        wait for clk_period*4;
-
-        -- K
-        entrada <= '0';
-        wait for clk_period*2;
-        entrada <= '1';
-        wait for clk_period*2;
-        entrada <= '0';
-        wait for clk_period*2;
-        
-        -- O
-        entrada <= '0';
-        wait for clk_period*6;
-
-        -- NC
-        entrada <= '1';
-        wait for clk_period;
-        entrada <= '0';
-        wait for clk_period;
-
-        -- NP
-        entrada <= '0';
-        wait for clk_period;
-        entrada <= '1';
-        wait for clk_period;
+         
+               -- NC
+               entrada <= '1';
+               wait for clk_period;
+               entrada <= '0';
+               wait for clk_period;
+               
+               -- A
+               entrada <= '1';
+               wait for clk_period*2;
+               entrada <= '0';
+               wait for clk_period*2;
+       
+               -- NC
+               entrada <= '1';
+               wait for clk_period;
+               entrada <= '0';
+               wait for clk_period;
+               
+               -- T
+               entrada <= '0';
+               wait for clk_period*2;
+       
+               -- NC
+               entrada <= '1';
+               wait for clk_period;
+               entrada <= '0';
+               wait for clk_period;
+               
+               -- I
+               entrada <= '1';
+               wait for clk_period*4;
+       
+               -- NC
+               entrada <= '1';
+               wait for clk_period;
+               entrada <= '0';
+               wait for clk_period;
+               
+               -- M
+               entrada <= '0';
+               wait for clk_period*4;
+       
+               -- NC
+               entrada <= '1';
+               wait for clk_period;
+               entrada <= '0';
+               wait for clk_period;
+               
+               -- A
+               entrada <= '1';
+               wait for clk_period*2;
+               entrada <= '0';
+               wait for clk_period*2;
+       
+               -- NC
+               entrada <= '1';
+               wait for clk_period;
+               entrada <= '0';
+               wait for clk_period;
+       
+               -- H
+               entrada <= '0';
+               wait for clk_period*8;
+       
+               -- NC
+               entrada <= '1';
+               wait for clk_period;
+               entrada <= '0';
+               wait for clk_period;
+       
+               -- NP
+               entrada <= '0';
+               wait for clk_period;
+               entrada <= '1';
+               wait for clk_period;
+       
+               -- L
+               entrada <= '1';
+               wait for clk_period*4;
+       
+               -- O
+               entrada <= '1';
+               wait for clk_period*2;
+               entrada <= '0';
+               wait for clk_period*2;
+               entrada <= '1';
+               wait for clk_period*4;
+       
+               -- K
+               entrada <= '0';
+               wait for clk_period*2;
+               entrada <= '1';
+               wait for clk_period*2;
+               entrada <= '0';
+               wait for clk_period*2;
+               
+               -- O
+               entrada <= '0';
+               wait for clk_period*6;
+       
+               -- NC
+               entrada <= '1';
+               wait for clk_period;
+               entrada <= '0';
+               wait for clk_period;
+       
+               -- NP
+               entrada <= '0';
+               wait for clk_period;
+               entrada <= '1';
+               wait for clk_period;
 
 
     end process;

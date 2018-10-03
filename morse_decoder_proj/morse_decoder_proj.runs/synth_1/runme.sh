@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log morse_decoder.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source morse_decoder.tcl
+EAStep vivado -log Morse.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Morse.tcl

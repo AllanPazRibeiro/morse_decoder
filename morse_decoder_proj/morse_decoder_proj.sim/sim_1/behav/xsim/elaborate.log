@@ -1,0 +1,15 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto cea44c81e00d45cf9089ebdd44069276 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Morse_tb_behav xil_defaultlib.Morse_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] morse remains a black-box since it has no binding entity [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder_test.vhd:46]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.morse_tb
+Built simulation snapshot Morse_tb_behav

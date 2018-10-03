@@ -1,0 +1,152 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Tue Oct  2 22:47:18 2018
+| Host         : ALLAN-PC running 64-bit major release  (build 9200)
+| Command      : report_methodology -file Morse_methodology_drc_routed.rpt -pb Morse_methodology_drc_routed.pb -rpx Morse_methodology_drc_routed.rpx
+| Design       : Morse
+| Device       : xc7k70tfbv676-1
+| Speed File   : -1
+| Design State : Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 23
++-----------+----------+------------------------------+------------+
+| Rule      | Severity | Description                  | Violations |
++-----------+----------+------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert | 2          |
+| TIMING-17 | Warning  | Non-clocked sequential cell  | 5          |
+| TIMING-20 | Warning  | Non-clocked latch            | 16         |
++-----------+----------+------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell data_counter_reg[2]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) data_counter_reg[0]/CLR, data_counter_reg[1]/CLR, data_counter_reg[2]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell saida_reg[7]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) saida_reg[0]/CLR, saida_reg[1]/CLR, saida_reg[2]/CLR, saida_reg[3]/CLR, saida_reg[4]/CLR, saida_reg[6]/CLR, saida_reg[7]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-17#1 Warning
+Non-clocked sequential cell  
+The clock pin current_state_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Warning
+Non-clocked sequential cell  
+The clock pin input_counter_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Warning
+Non-clocked sequential cell  
+The clock pin input_counter_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Warning
+Non-clocked sequential cell  
+The clock pin input_reg_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Warning
+Non-clocked sequential cell  
+The clock pin input_reg_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch data_counter_reg[0] cannot be properly analyzed as its control pin data_counter_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch data_counter_reg[1] cannot be properly analyzed as its control pin data_counter_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch data_counter_reg[2] cannot be properly analyzed as its control pin data_counter_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch data_reg_reg[0] cannot be properly analyzed as its control pin data_reg_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch data_reg_reg[1] cannot be properly analyzed as its control pin data_reg_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch data_reg_reg[2] cannot be properly analyzed as its control pin data_reg_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch data_reg_reg[3] cannot be properly analyzed as its control pin data_reg_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch next_state_reg cannot be properly analyzed as its control pin next_state_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch saida_reg[0] cannot be properly analyzed as its control pin saida_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch saida_reg[1] cannot be properly analyzed as its control pin saida_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch saida_reg[2] cannot be properly analyzed as its control pin saida_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch saida_reg[3] cannot be properly analyzed as its control pin saida_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch saida_reg[4] cannot be properly analyzed as its control pin saida_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch saida_reg[5]/L7 (in saida_reg[5] macro) cannot be properly analyzed as its control pin saida_reg[5]/L7/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch saida_reg[6] cannot be properly analyzed as its control pin saida_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch saida_reg[7] cannot be properly analyzed as its control pin saida_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+

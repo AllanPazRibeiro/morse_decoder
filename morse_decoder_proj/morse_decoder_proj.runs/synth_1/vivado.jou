@@ -2,11 +2,11 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Tue Oct  2 00:46:32 2018
-# Process ID: 6888
+# Start of session at: Tue Oct  2 22:43:53 2018
+# Process ID: 3680
 # Current directory: C:/Users/ALLAN/Documents/morse_decoder/morse_decoder_proj/morse_decoder_proj.runs/synth_1
-# Command line: vivado.exe -log morse_decoder.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source morse_decoder.tcl
-# Log file: C:/Users/ALLAN/Documents/morse_decoder/morse_decoder_proj/morse_decoder_proj.runs/synth_1/morse_decoder.vds
+# Command line: vivado.exe -log Morse.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Morse.tcl
+# Log file: C:/Users/ALLAN/Documents/morse_decoder/morse_decoder_proj/morse_decoder_proj.runs/synth_1/Morse.vds
 # Journal file: C:/Users/ALLAN/Documents/morse_decoder/morse_decoder_proj/morse_decoder_proj.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source morse_decoder.tcl -notrace
+source Morse.tcl -notrace

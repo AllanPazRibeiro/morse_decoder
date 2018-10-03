@@ -40,12 +40,12 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]
 
-synth_design -top morse_decoder -part xc7k70tfbv676-1
+synth_design -top Morse -part xc7k70tfbv676-1
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef morse_decoder.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file morse_decoder_utilization_synth.rpt -pb morse_decoder_utilization_synth.pb"
+write_checkpoint -force -noxdef Morse.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file Morse_utilization_synth.rpt -pb Morse_utilization_synth.pb"
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]
