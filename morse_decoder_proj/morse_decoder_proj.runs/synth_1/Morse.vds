@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Tue Oct  2 22:43:53 2018
-# Process ID: 3680
+# Start of session at: Wed Oct  3 22:11:58 2018
+# Process ID: 9524
 # Current directory: C:/Users/ALLAN/Documents/morse_decoder/morse_decoder_proj/morse_decoder_proj.runs/synth_1
 # Command line: vivado.exe -log Morse.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Morse.tcl
 # Log file: C:/Users/ALLAN/Documents/morse_decoder/morse_decoder_proj/morse_decoder_proj.runs/synth_1/Morse.vds
@@ -15,41 +15,41 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 1688 
+INFO: Helper process launched with PID 7528 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 357.309 ; gain = 99.352
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 357.184 ; gain = 99.797
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Morse' [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:11]
-INFO: [Synth 8-226] default block is never used [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:59]
-WARNING: [Synth 8-614] signal 'data_counter' is read in the process but is not in the sensitivity list [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:53]
-WARNING: [Synth 8-614] signal 'data_reg' is read in the process but is not in the sensitivity list [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:53]
-INFO: [Synth 8-226] default block is never used [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:94]
-INFO: [Synth 8-226] default block is never used [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:102]
-INFO: [Synth 8-226] default block is never used [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:114]
-WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:85]
-WARNING: [Synth 8-614] signal 'data_counter' is read in the process but is not in the sensitivity list [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:85]
-WARNING: [Synth 8-614] signal 'data_reg' is read in the process but is not in the sensitivity list [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:85]
-INFO: [Synth 8-256] done synthesizing module 'Morse' (1#1) [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:11]
+INFO: [Synth 8-638] synthesizing module 'Morse' [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:30]
+INFO: [Synth 8-226] default block is never used [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:78]
+WARNING: [Synth 8-614] signal 'data_counter' is read in the process but is not in the sensitivity list [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:72]
+WARNING: [Synth 8-614] signal 'data_reg' is read in the process but is not in the sensitivity list [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:72]
+INFO: [Synth 8-226] default block is never used [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:113]
+INFO: [Synth 8-226] default block is never used [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:121]
+INFO: [Synth 8-226] default block is never used [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:133]
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:104]
+WARNING: [Synth 8-614] signal 'data_counter' is read in the process but is not in the sensitivity list [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:104]
+WARNING: [Synth 8-614] signal 'data_reg' is read in the process but is not in the sensitivity list [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:104]
+INFO: [Synth 8-256] done synthesizing module 'Morse' (1#1) [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:30]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 412.047 ; gain = 154.090
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 411.863 ; gain = 154.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 412.047 ; gain = 154.090
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 411.863 ; gain = 154.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k70tfbv676-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 412.047 ; gain = 154.090
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 411.863 ; gain = 154.477
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7k70tfbv676-1
-WARNING: [Synth 8-327] inferring latch for variable 'saida_reg' [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:88]
-WARNING: [Synth 8-327] inferring latch for variable 'data_counter_reg' [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:56]
-WARNING: [Synth 8-327] inferring latch for variable 'data_reg_reg' [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:57]
-WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:49]
+WARNING: [Synth 8-327] inferring latch for variable 'saida_reg' [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:107]
+WARNING: [Synth 8-327] inferring latch for variable 'data_counter_reg' [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:75]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg_reg' [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:76]
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/Users/ALLAN/Documents/morse_decoder/morse_decoder.vhd:68]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 412.047 ; gain = 154.090
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 411.863 ; gain = 154.477
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -121,7 +121,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 551.680 ; gain = 293.723
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 552.555 ; gain = 295.168
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -134,7 +134,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 551.680 ; gain = 293.723
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 552.555 ; gain = 295.168
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -146,7 +146,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 551.680 ; gain = 293.723
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 552.555 ; gain = 295.168
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -170,7 +170,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 551.680 ; gain = 293.723
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 552.555 ; gain = 295.168
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -183,7 +183,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 551.680 ; gain = 293.723
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 552.555 ; gain = 295.168
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -195,25 +195,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 551.680 ; gain = 293.723
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 552.555 ; gain = 295.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 551.680 ; gain = 293.723
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 552.555 ; gain = 295.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 551.680 ; gain = 293.723
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 552.555 ; gain = 295.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 551.680 ; gain = 293.723
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 552.555 ; gain = 295.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -251,11 +251,11 @@ Report Instance Areas:
 |1     |top      |       |    60|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 551.680 ; gain = 293.723
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 552.555 ; gain = 295.168
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 551.680 ; gain = 293.723
-Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 551.680 ; gain = 293.723
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 552.555 ; gain = 295.168
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 552.555 ; gain = 295.168
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -270,9 +270,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 15 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 651.598 ; gain = 406.648
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 653.766 ; gain = 408.828
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/ALLAN/Documents/morse_decoder/morse_decoder_proj/morse_decoder_proj.runs/synth_1/Morse.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Morse_utilization_synth.rpt -pb Morse_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.096 . Memory (MB): peak = 651.598 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Oct  2 22:44:33 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 653.766 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Oct  3 22:12:29 2018...
